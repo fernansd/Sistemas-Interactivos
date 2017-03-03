@@ -1,2 +1,2 @@
-# Sistemas-Interactivos
+# Sistemas Interactivos
 Prácticas de Sistemas Interactivos
