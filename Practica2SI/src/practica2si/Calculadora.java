@@ -62,7 +62,7 @@ public class Calculadora extends javax.swing.JFrame {
 
         resultados.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         resultados.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        resultados.setToolTipText("Operaciones");
+        resultados.setToolTipText("Área de resultados");
 
         btnLimpiar.setText("Limpiar");
         btnLimpiar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -78,9 +78,9 @@ public class Calculadora extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(etiquetaResultados)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(resultados)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnLimpiar))
+                .addComponent(resultados, javax.swing.GroupLayout.DEFAULT_SIZE, 199, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -94,16 +94,19 @@ public class Calculadora extends javax.swing.JFrame {
 
         Numeros.setLayout(new java.awt.GridLayout(4, 4, 10, 10));
 
-        num1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        num1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         num1.setText("1");
         num1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 num1MouseClicked(evt);
             }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                num1MousePressed(evt);
+            }
         });
         Numeros.add(num1);
 
-        num2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        num2.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         num2.setText("2");
         num2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -112,7 +115,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
         Numeros.add(num2);
 
-        num3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        num3.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         num3.setText("3");
         num3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -121,11 +124,11 @@ public class Calculadora extends javax.swing.JFrame {
         });
         Numeros.add(num3);
 
-        btnDivision.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnDivision.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         btnDivision.setText("/");
         Numeros.add(btnDivision);
 
-        num4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        num4.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         num4.setText("4");
         num4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -134,7 +137,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
         Numeros.add(num4);
 
-        num5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        num5.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         num5.setText("5");
         num5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -143,7 +146,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
         Numeros.add(num5);
 
-        num6.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        num6.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         num6.setText("6");
         num6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -152,11 +155,11 @@ public class Calculadora extends javax.swing.JFrame {
         });
         Numeros.add(num6);
 
-        btnProducto.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnProducto.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         btnProducto.setText("*");
         Numeros.add(btnProducto);
 
-        num7.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        num7.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         num7.setText("7");
         num7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -165,7 +168,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
         Numeros.add(num7);
 
-        num8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        num8.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         num8.setText("8");
         num8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -174,7 +177,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
         Numeros.add(num8);
 
-        num9.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        num9.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         num9.setText("9");
         num9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -183,11 +186,11 @@ public class Calculadora extends javax.swing.JFrame {
         });
         Numeros.add(num9);
 
-        btnSuma.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnSuma.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         btnSuma.setText("+");
         Numeros.add(btnSuma);
 
-        btnPunto.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnPunto.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         btnPunto.setText(".");
         btnPunto.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -196,7 +199,7 @@ public class Calculadora extends javax.swing.JFrame {
         });
         Numeros.add(btnPunto);
 
-        num0.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        num0.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         num0.setText("0");
         num0.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -205,11 +208,11 @@ public class Calculadora extends javax.swing.JFrame {
         });
         Numeros.add(num0);
 
-        jButton3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButton3.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         jButton3.setText("=");
         Numeros.add(jButton3);
 
-        btnResta.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnResta.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
         btnResta.setText("-");
         Numeros.add(btnResta);
 
@@ -221,7 +224,7 @@ public class Calculadora extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Numeros, javax.swing.GroupLayout.DEFAULT_SIZE, 396, Short.MAX_VALUE))
+                    .addComponent(Numeros, javax.swing.GroupLayout.DEFAULT_SIZE, 352, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -230,7 +233,7 @@ public class Calculadora extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(Numeros, javax.swing.GroupLayout.DEFAULT_SIZE, 331, Short.MAX_VALUE)
+                .addComponent(Numeros, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -239,64 +242,69 @@ public class Calculadora extends javax.swing.JFrame {
 
     private void num1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_num1MouseClicked
         JButton btn = (JButton)evt.getSource();
-        appendToTextField(btn, resultados);
+        appendToTextfield(btn, resultados);
     }//GEN-LAST:event_num1MouseClicked
 
     private void num2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_num2MouseClicked
         JButton btn = (JButton)evt.getSource();
-        appendToTextField(btn, resultados);
+        appendToTextfield(btn, resultados);
     }//GEN-LAST:event_num2MouseClicked
 
     private void num3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_num3MouseClicked
         JButton btn = (JButton)evt.getSource();
-        appendToTextField(btn, resultados);
+        appendToTextfield(btn, resultados);
     }//GEN-LAST:event_num3MouseClicked
 
     private void num4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_num4MouseClicked
         JButton btn = (JButton)evt.getSource();
-        appendToTextField(btn, resultados);
+        appendToTextfield(btn, resultados);
     }//GEN-LAST:event_num4MouseClicked
 
     private void num5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_num5MouseClicked
         JButton btn = (JButton)evt.getSource();
-        appendToTextField(btn, resultados);
+        appendToTextfield(btn, resultados);
     }//GEN-LAST:event_num5MouseClicked
 
     private void num6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_num6MouseClicked
         JButton btn = (JButton)evt.getSource();
-        appendToTextField(btn, resultados);
+        appendToTextfield(btn, resultados);
     }//GEN-LAST:event_num6MouseClicked
 
     private void num7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_num7MouseClicked
         JButton btn = (JButton)evt.getSource();
-        appendToTextField(btn, resultados);
+        appendToTextfield(btn, resultados);
     }//GEN-LAST:event_num7MouseClicked
 
     private void num8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_num8MouseClicked
         JButton btn = (JButton)evt.getSource();
-        appendToTextField(btn, resultados);
+        appendToTextfield(btn, resultados);
     }//GEN-LAST:event_num8MouseClicked
 
     private void num9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_num9MouseClicked
         JButton btn = (JButton)evt.getSource();
-        appendToTextField(btn, resultados);
+        appendToTextfield(btn, resultados);
     }//GEN-LAST:event_num9MouseClicked
 
     private void num0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_num0MouseClicked
         JButton btn = (JButton)evt.getSource();
-        appendToTextField(btn, resultados);
+        appendToTextfield(btn, resultados);
     }//GEN-LAST:event_num0MouseClicked
 
     private void btnPuntoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnPuntoMouseClicked
         JButton btn = (JButton)evt.getSource();
-        appendToTextField(btn, resultados);
+        appendToTextfield(btn, resultados);
     }//GEN-LAST:event_btnPuntoMouseClicked
 
     private void btnLimpiarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnLimpiarMouseClicked
         resultados.setText(""); // Borra el contenido del campo resultados
     }//GEN-LAST:event_btnLimpiarMouseClicked
 
-    private void appendToTextField(JButton btn, JTextField textField) {
+    private void num1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_num1MousePressed
+        JButton btn = (JButton)evt.getSource();
+        appendToTextfield(btn, resultados);
+    }//GEN-LAST:event_num1MousePressed
+
+    private void appendToTextfield(JButton btn, JTextField textField) {
         textField.setText(textField.getText() + btn.getText());
     }
     
@@ -329,6 +337,7 @@ public class Calculadora extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 new Calculadora().setVisible(true);
             }

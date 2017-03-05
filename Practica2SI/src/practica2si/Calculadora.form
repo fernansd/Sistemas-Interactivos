@@ -28,7 +28,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jPanel1" max="32767" attributes="0"/>
-                  <Component id="Numeros" pref="396" max="32767" attributes="0"/>
+                  <Component id="Numeros" pref="352" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
@@ -40,7 +40,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="Numeros" pref="331" max="32767" attributes="0"/>
+              <Component id="Numeros" pref="217" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -55,9 +55,9 @@
               <Group type="102" attributes="0">
                   <Component id="etiquetaResultados" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="resultados" max="32767" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="btnLimpiar" min="-2" max="-2" attributes="0"/>
+                  <Component id="resultados" pref="199" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnLimpiar" min="-2" pref="69" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -89,7 +89,7 @@
               <Font name="Dialog" size="14" style="0"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="4"/>
-            <Property name="toolTipText" type="java.lang.String" value="Operaciones"/>
+            <Property name="toolTipText" type="java.lang.String" value="&#xc1;rea de resultados"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnLimpiar">
@@ -114,18 +114,19 @@
         <Component class="javax.swing.JButton" name="num1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="18" style="1"/>
+              <Font name="Dialog" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="1"/>
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="num1MouseClicked"/>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="num1MousePressed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="num2">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="18" style="1"/>
+              <Font name="Dialog" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="2"/>
           </Properties>
@@ -136,7 +137,7 @@
         <Component class="javax.swing.JButton" name="num3">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="18" style="1"/>
+              <Font name="Dialog" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="3"/>
           </Properties>
@@ -147,7 +148,7 @@
         <Component class="javax.swing.JButton" name="btnDivision">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="18" style="1"/>
+              <Font name="Dialog" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="/"/>
           </Properties>
@@ -155,7 +156,7 @@
         <Component class="javax.swing.JButton" name="num4">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="18" style="1"/>
+              <Font name="Dialog" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="4"/>
           </Properties>
@@ -166,7 +167,7 @@
         <Component class="javax.swing.JButton" name="num5">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="18" style="1"/>
+              <Font name="Dialog" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="5"/>
           </Properties>
@@ -177,7 +178,7 @@
         <Component class="javax.swing.JButton" name="num6">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="18" style="1"/>
+              <Font name="Dialog" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="6"/>
           </Properties>
@@ -188,7 +189,7 @@
         <Component class="javax.swing.JButton" name="btnProducto">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="18" style="1"/>
+              <Font name="Dialog" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="*"/>
           </Properties>
@@ -196,7 +197,7 @@
         <Component class="javax.swing.JButton" name="num7">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="18" style="1"/>
+              <Font name="Dialog" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="7"/>
           </Properties>
@@ -207,7 +208,7 @@
         <Component class="javax.swing.JButton" name="num8">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="18" style="1"/>
+              <Font name="Dialog" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="8"/>
           </Properties>
@@ -218,7 +219,7 @@
         <Component class="javax.swing.JButton" name="num9">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="18" style="1"/>
+              <Font name="Dialog" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="9"/>
           </Properties>
@@ -229,7 +230,7 @@
         <Component class="javax.swing.JButton" name="btnSuma">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="18" style="1"/>
+              <Font name="Dialog" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="+"/>
           </Properties>
@@ -237,7 +238,7 @@
         <Component class="javax.swing.JButton" name="btnPunto">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="18" style="1"/>
+              <Font name="Dialog" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="."/>
           </Properties>
@@ -248,7 +249,7 @@
         <Component class="javax.swing.JButton" name="num0">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="18" style="1"/>
+              <Font name="Dialog" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="0"/>
           </Properties>
@@ -259,7 +260,7 @@
         <Component class="javax.swing.JButton" name="jButton3">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="18" style="1"/>
+              <Font name="Dialog" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="="/>
           </Properties>
@@ -267,7 +268,7 @@
         <Component class="javax.swing.JButton" name="btnResta">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="18" style="1"/>
+              <Font name="Dialog" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="-"/>
           </Properties>
