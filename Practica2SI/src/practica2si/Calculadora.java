@@ -60,9 +60,11 @@ public class Calculadora extends javax.swing.JFrame {
         etiquetaResultados.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         etiquetaResultados.setText("Resultados");
 
+        resultados.setEditable(false);
         resultados.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
         resultados.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         resultados.setToolTipText("Área de resultados");
+        resultados.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
         btnLimpiar.setText("Limpiar");
         btnLimpiar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -77,10 +79,10 @@ public class Calculadora extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(etiquetaResultados)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(resultados, javax.swing.GroupLayout.DEFAULT_SIZE, 199, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnLimpiar, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(resultados)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnLimpiar))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -224,7 +226,7 @@ public class Calculadora extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Numeros, javax.swing.GroupLayout.DEFAULT_SIZE, 352, Short.MAX_VALUE))
+                    .addComponent(Numeros, javax.swing.GroupLayout.DEFAULT_SIZE, 413, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
