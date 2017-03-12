@@ -1,1 +1,5 @@
 build/
+*/build/
+/Practica3SI/nbproject/private/
+/Practica3SI/dist/
+/Componente/nbproject/private/
